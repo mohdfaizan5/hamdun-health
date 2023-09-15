@@ -1,0 +1,151 @@
+@font-face {
+  font-family: Inter;
+  src: url(assets/Inter-font.ttf);
+}
+
+* {
+  /* padding: 0px;
+  margin: 0px; */
+  font-family: Inter, system-ui, -apple-system;
+  color: #18181C;
+}
+
+
+
+
+
+
+
+
+body {
+  margin: 0;
+}
+
+.glow-bg {
+  position: absolute;
+  width: 190px;
+  height: 190px;
+  margin-top: 50px;
+  margin-left: 60px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  animation-name: glow;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes glow {
+  50% {
+    box-shadow: 0px 0px 100px green;
+  }
+}
+
+
+/* HEADER */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+  font-weight: 700;
+  /* flex-direction: ; */
+}
+
+.nav_logo {
+  width: 90px;
+  cursor: pointer;
+}
+
+nav h2 {
+  display: inline-block;
+}
+
+.nav_links_container-mobile{
+  display: none;
+}
+.nav_links_container-mobile img{
+  /* display: none; */
+  width: 25px;
+}
+nav a{
+  margin-right: 10px;
+}
+
+
+
+main {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  padding: 0px 20px;
+
+}
+
+hr {
+  width: 95%;
+}
+
+
+
+/* SLIDING IMAGES */
+.sliding_carasol img {
+  width: 90%;
+  border-radius: 20px;
+  /* box-shadow: 5px 5px 50px #3d3d3d56; */
+
+}
+
+.sliding_carasol {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+/* PRODUCT CONTAINER */
+.product_card_img{
+  width: 200px;
+}
+
+
+/* BUTTONS */
+.btn1 {
+  /* background-color: #16CAA0; */
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 8px;
+  cursor: pointer;
+}
+
+.btn2 {
+  background-color: #21C8E7;
+}
+
+
+
+/* FOOTER */
+footer {
+  display: flex;
+  background-color: #18181C;
+  color: white;
+  align-items: center;
+  height: 60px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 425px) {
+  body{
+    /* background-color: red; */
+  }
+  .nav_links_container-mobile{
+    display: block;
+  }
+  .nav_links_container{
+    display: none;
+  }
+  
+}

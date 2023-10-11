@@ -7,7 +7,7 @@
   /* padding: 0px;
   margin: 0px; */
   font-family: Inter, system-ui, -apple-system;
-  color: #18181C;
+  /* color: #18181C; */
 }
 
 
@@ -104,8 +104,8 @@ hr {
 .product-card__container {
   display: flex;
   align-items: center;
-  border: 1px solid #18181C;
-  padding: 20px;
+  border: .8px solid #18181C;
+  padding: 30px;
   border-radius: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -228,12 +228,8 @@ hr {
 /* FOOTER */
 footer {
   display: flex;
-  background-color: #18181C;
-  color: white;
-  align-items: center;
-  height: 60px;
-  justify-content: center;
-  margin-top: 30px;
+  flex-direction: column;
+  height: 300px;
 }
 
 /* RESPONSIVE DESIGN */
@@ -256,4 +252,87 @@ footer {
     /* max-width: 250px; */
   }
 
+  .contact-section {
+    height: 100px;
+    margin-top: 10px;
+    padding: 0px 0px;
+    font-size: 14px;
+  }
+
+  .contact-container {
+    gap: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 11px;
+  }
+
+  .social {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+  }
+
+
+
+
+}
+
+/* Contact section - footer */
+
+
+.copyrights {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #18181C;
+  height: 60px;
+  width: 100%;
+}
+
+
+.contact-section {
+  height: 160px;
+  background-color: rgb(72, 72, 73);
+  margin-top: 30px;
+  padding: 20px 80px;
+  color: white;
+}
+
+.contact-text {
+  color: white;
+  text-align: center;
+  margin: 0;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  /* gap: 10px; */
+}
+
+
+.social-links {
+  margin-bottom: 20px;
+}
+
+.social {
+  gap: 20px;
+  font-size: larger;
+}
+
+.title {
+  text-align: center;
+}
+
+.description {
+  text-align: center;
+}
+
+.img-text {
+  text-align: center;
+  padding-bottom: 40px;
+  border-bottom: solid .6px #18181C;
 }

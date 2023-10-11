@@ -7,8 +7,10 @@
   <title>Humdum</title>
   <link rel="shortcut icon" href="static/assets/favicon.png" type="image/png">
   <link href="static/style.css" rel="stylesheet">
-  <script src="static/script.js"></script>
+  <script src="static/script.js" defer></script>
 
+  <!-- FOnt awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -25,17 +27,17 @@
         </a>
       </section>
       <section class="nav_links_container-mobile">
-        <img src="static/assets/menu-icon.svg" alt="">
+        <img src="static/assets/icons/menu-icon.svg" alt="">
       </section>
     </nav>
     <hr>
   </header>
 
-
   <section class="sliding_carasol">
     <img src="static/assets/Slide Images/majoon web banners 02.jpg" alt="">
   </section>
   <main>
+
     <!-- <h1>Humdum </h1> -->
     <!-- <h5>- A health product</h5> -->
 
@@ -49,9 +51,33 @@
     Majoon-e-Keemya is a formula that combines herbal extracts of *vitamins and *nutrients to reduce inflammation and
     boost your immune system so you can feel better in no time!
 
-    <div class="product_card">
-      <img class="product_card_img" src="static/assets/Faizan Majoon Jar UR.png" alt="">
-      <button class="btn1">Order now</button>
+    <div class="product-card__container">
+      <div class="left">
+        <img class="product_card_img" src="static/assets/Faizan Majoon Jar UR.png" alt="">
+      </div>
+      <div class="right">
+        <div class="price__container">
+          <div class="actual__price">
+            <div></div>
+            ₹2000</div>
+          <div class="discounted__price">₹1499</div>
+        </div>
+        <div class="quantities__container">
+          <span>250gm</span>
+          <span>350gm</span>
+          <span>500gm</span>
+        </div>
+        <div class="order__container">
+          <i class="fa-solid fa-plus"></i>
+          <input type="text" id="quantity">
+          <i class="fa-solid fa-minus"></i>
+
+          <button class="btn1">Order now</button>
+        </div>
+      </div>
+
+
+
     </div>
     <!-- <div style=" position: relative;">
       <div class="glow-bg">
@@ -62,52 +88,126 @@
 
     </div> -->
 
-    <section class="faqs">
-      <h2>Faq's</h2>
-      Common Questions People Ask:
-      1. Can We Use Majoon-E-Keemya In Joint Pain?
+    <h2>Faq's</h2>
+    Common Questions People Ask:
+    <section id="faqContainer" class="faq__container">
+      <div class="faq active">
+        <h4 class="faq-title">
+          1. Can We Use Majoon-E-Keemya In Joint Pain?
+        </h4>
+        <span class="faq-text">
+          yes!! you can use it
+        </span>
+        <button class="faq-toggle">
+          <img src="static/assets/icons/chevron-down-solid.svg"></img>
+        </button>
 
-      YES <br>
-
-
-      2. Can We Use Majoon-E-Keemya In Back Pain, Slip Disc, Nerve Compress?
-
-      YES <br>
-
-
-
-
-      3. Can We Use Majoon-E-Keemya In Arthritis Pain?
-
-      YES <br>
+      </div>
 
 
 
-      4. Can We Use Majoon-E-Keemya In General Weakness?
+      <div class="faq">
+        <h4 class="faq-title">
+          2. Can We Use Majoon-E-Keemya In Back Pain, Slip Disc, Nerve Compress?
+        </h4>
+        <span class="faq-text">
+          YES
+        </span>
+        <button>
+          <img src="static/assets/icons/chevron-down-solid.svg"></img>
+        </button>
 
-      YES <br>
+      </div>
+
+      <div class="faq">
+        <h4 class="faq-title">
+          3. Can We Use Majoon-E-Keemya In Arthritis Pain?
+        </h4>
+        <span class="faq-text">
+          YES
+        </span>
+        <button>
+          <img src="static/assets/icons/chevron-down-solid.svg"></img>
+        </button>
+      </div>
 
 
 
-      5. Can We Use Majoon-E-Keemya In Sexual Weakness Like Premature Ejaculation And Erectile Dysfunction?
+      <div class="faq">
+        <h4 class="faq-title">
+          4. Can We Use Majoon-E-Keemya In General Weakness?
+        </h4>
+        <span class="faq-text">
+          YES
+        </span>
+        <button>
+          <img src="static/assets/icons/chevron-down-solid.svg"></img>
+        </button>
 
-      YES <br>
-
-
-
-      6. Can We Use Majoon-E-Keemya In (Sugar) Diabetes Patients?
-
-      YES <br> (IF SUGAR IS BELOW 350. OR ELSE REDUCE THE DOSAGE)
-
-
-
-      7. Are There Any Side Effects Of This Majoon-E Keemya?
-
-      NO
+      </div>
 
 
 
-      8. Can We Use Majoon-E-Keemya In Anaemia?
+
+      <div class="faq">
+        <h4 class="faq-title">
+          5. Can We Use Majoon-E-Keemya In Sexual Weakness Like Premature Ejaculation And Erectile Dysfunction?
+
+        </h4>
+        <span class="faq-text">
+          YES
+        </span>
+        <button>
+          <img src="static/assets/icons/chevron-down-solid.svg"></img>
+        </button>
+
+      </div>
+
+
+      <div class="faq">
+        <h4 class="faq-title">
+          10. Can We Use Majoon-E-Keemya On Paralysis Patients?
+
+        </h4>
+        <span class="faq-text">
+          YES
+        </span>
+        <button>
+          <img src="static/assets/icons/chevron-down-solid.svg"></img>
+        </button>
+      </div>
+
+      <div class="faq">
+        <h4 class="faq-title">
+
+          6. Can We Use Majoon-E-Keemya In (Sugar) Diabetes Patients?
+        </h4>
+        <span class="faq-text">
+          YES (IF SUGAR IS BELOW 350. OR ELSE REDUCE THE DOSAGE)
+        </span>
+        <button>
+          <img src="static/assets/icons/chevron-down-solid.svg"></img>
+        </button>
+      </div>
+
+      <div class="faq active">
+        <h4 class="faq-title">
+
+          7. Are There Any Side Effects Of This Majoon-E Keemya?
+        </h4>
+        <span class="faq-text">
+          No
+        </span>
+        <button>
+          <img src="static/assets/icons/chevron-down-solid.svg"></img>
+        </button>
+      </div>
+
+
+
+
+
+      <!-- 8. Can We Use Majoon-E-Keemya In Anaemia?
 
       YES <br>
 
@@ -119,8 +219,6 @@
 
 
 
-      10. Can We Use Majoon-E-Keemya On Paralysis Patients?
-
       YES <br>
 
 
@@ -130,9 +228,9 @@
       NO
 
 
-
-      THIS IS 100% NATURAL HERBAL PRODUCT
+ -->
     </section>
+    THIS IS 100% NATURAL HERBAL PRODUCT
     <!-- <button class="btn1">I want to become healthy</button> -->
   </main>
   <footer>

@@ -16,4 +16,24 @@ black - 18181C
 069BCE - darkblue
 
 
+<!-- FInal colors -->
+
+
+
 ### Todos
+
+
+<!-- FInal Inspiration -->
+https://dribbble.com/shots/22752920-UI
+
+## Colors
+
+green - #5BC73C
+lightGreen - #A1DD90
+black - #000
+lightblack - #E8E8E8
+differenciating section - #F7F7F7
+bg - white
+
+
+<!-- Work one more hour -->

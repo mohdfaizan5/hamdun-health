@@ -5,119 +5,266 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Humdum</title>
-  <link rel="shortcut icon" href="static/assets/favicon.png" type="image/png">
-  <link href="static/style.css" rel="stylesheet">
+  <link rel="shortcut icon" href="static/assets/product_images/favicon.png" type="image/png">
+
+  <link href="static/css/general.css" rel="stylesheet">
+  <link href="static/css/head_foot_faq.css" rel="stylesheet">
+  <link href="static/css/other.css" rel="stylesheet">
+  <link href="static/css/features.css" rel="stylesheet">
+  <link href="static/css/testimonial.css" rel="stylesheet">
+
   <script src="static/script.js" defer></script>
 
-  <!-- FOnt awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Remix Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+
 </head>
 
 <body>
+  <section class="loading_animation"></section>
+  <section class="popup_wraper">
+    <div>
+      <i class="icon_popup ri-close-circle-line"></i>
+    </div>
+    <span>One time offer </span>
+    <h3>Get 20% off</h3>
+    <p>On this order</p>
+    <button class="btn1">Yes, Please</button>
+    <button class="btn1 btn2">No, Thanks</button>
+    <span>Limited Offer don't miss out!</span>
+  </section>
+
   <header>
     <nav>
       <section class="nav_company_container">
-        <img class="nav_logo" src="static/assets/favicon.png" alt="">
+        <img class="nav_logo" src="static/assets/product_images/favicon.png" alt="">
       </section>
       <section class="nav_links_container">
         <a href="">Home</a>
         <a href="">About us</a>
         <a href="">
-          <button class="btn1">Call Us</button>
+          <button class="btn1">Order Now</button>
         </a>
       </section>
       <section class="nav_links_container-mobile">
-        <img src="static/assets/icons/menu-icon.svg" alt="">
+        <i class="ri-menu-fill"></i>
       </section>
     </nav>
     <hr>
   </header>
 
-  <h1 class="title">Humdum </h1>
-  <section class="sliding_carasol">
+  <!-- <h1 class="title">Humdum </h1> -->
+  <!-- <section class="sliding_carasol">
+    <img src="static/assets/Slide Images/majoon web banners 01.jpg" alt="">
     <img src="static/assets/Slide Images/majoon web banners 02.jpg" alt="">
-  </section>
+    <img src="static/assets/Slide Images/majoon web banners 03.jpg" alt="">
+    <img src="static/assets/Slide Images/majoon web banners 04.jpg" alt="">
+    <img src="static/assets/Slide Images/majoon web banners 05.jpg" alt="">
+    <img src="static/assets/Slide Images/majoon web banners 06.jpg" alt="">
+  </section> -->
   <main>
 
-    <!-- <h5>- A health product</h5> -->
+    <section class="hero_section">
+      <div class="left">
+        <h3>
+          WE CARE ABOUT YOUR HEALTH AND YOUR FAMILY
+        </h3>
 
-    <!-- Majoon-e-Keemya Health is Wealth -->
+        <p class="description">
+          We make health products that make your life easy and happy Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Qui, eligendi.
+        </p>
 
-    <h3>
+        <div>
 
-      What is Majoon-e-Keemya?
-    </h3>
+          <button class="btn1">I want to be healthy
+            <i class="ri-arrow-right-up-line"></i>
+          </button>
+          <button class="btn1 btn2">No, I'm fine unhealty...</button>
+        </div>
+      </div>
 
-    <p class="description">
-      Majoon-e-Keemya is a formula that combines herbal extracts of (vitamins and nutrients) to reduce inflammation and
-      boost your immune system so you can feel better in no time!
+      <div class="right">
+        <img src="static/assets/icons/graph.png" alt=""> -->
+        <img id="hero_img" src="static/assets/product_images/majoon_jar_front.png" alt="">
 
-    </p>
+      </div>
+    </section>
+
+
+
+
+
+
+    <!-- Features -->
+    <section class="feature_container">
+      <div class="feature">
+        <div>
+          <img src="static/assets/product_images/All Ingredients.png" alt="">
+        </div>
+
+        <h3>Highly Impact Ingrediants</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi dolorum ad repellendus omnis, tempore sunt
+          vitae exercitationem amet cumque optio.s</p>
+      </div>
+
+      <div class="feature">
+        <div>
+          <img src="static/assets/product_images/All Ingredients.png" alt="">
+        </div>
+
+        <h3>Highly Impact Ingrediants</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi dolorum ad repellendus omnis, tempore sunt
+          vitae exercitationem amet cumque optio.s</p>
+      </div>
+
+      <div class="feature">
+        <div>
+          <img src="static/assets/product_images/All Ingredients.png" alt="">
+        </div>
+
+        <h3>Highly Impact Ingrediants</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi dolorum ad repellendus omnis, tempore sunt
+          vitae exercitationem amet cumque optio.s</p>
+      </div>
+
+
+    </section>
 
 
     <div class="product-card__container">
       <div class="left">
-        <img class="product_card_img" src="static/assets/Faizan Majoon Jar UR.png" alt="">
+        <img class="product_card_img" src="static/assets/product_images/majoon_jar_back.png" alt="">
       </div>
-      <!-- <div class="right">
+      <div class="right">
+
+        <h2>Majoon-e-Keemya</h2>
+        <div class="description">
+          Majoon-e-Keemya is a formula that combines herbal extracts of (vitamins and nutrients) to reduce inflammation
+          and
+          boost your immune system so you can feel better in no time!
+        </div>
+        <div class="quantities__container">
+          <!-- <span>250gm</span>
+          <span>350gm</span> -->
+          <!-- <span>500gm</span> -->
+
+        </div>
         <div class="price__container">
           <div class="actual__price">
-            <div></div>
+
             ₹2000
           </div>
           <div class="discounted__price">₹1499</div>
         </div>
-        <div class="quantities__container">
-          <span>250gm</span>
-          <span>350gm</span>
-          <span>500gm</span>
+        <div class="review_stars">
+          ⭐⭐⭐⭐⭐
         </div>
         <div class="order__container">
-          <i class="fa-solid fa-plus"></i>
-          <input type="text" id="quantity">
-          <i class="fa-solid fa-minus"></i>
-
+          <!-- <i class="fa-solid fa-plus"></i>
+          <input type="number" id="quantity" min="1" value="1">
+          <i class="fa-solid fa-minus"></i> -->
+          500gm
           <button class="btn1">Order now</button>
         </div>
-      </div> -->
+      </div>
 
 
 
 
     </div>
-    <h2 class="img-text">Contact below👇 to place orders!</h2>
 
 
-    <!-- <div style=" position: relative;">
-      <div class="glow-bg">
-      </div>
-      <div style="position: absolute;">
-        <img src="static/assets/Faizan Majoon Jar.png" height="300px" alt="">
-      </div>
-
-    </div> -->
+    <section class="testimonials_wrapper">
+      <article class="testimonial">
+        <div class="customer_img">
+          <img src="" alt="">
+        </div>
+        <h4>Nadeem Ahmed</h4>
+        <p>This was a fabulous product for me Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias hic
+          mollitia suscipit nobis perferendis .</p>
+      </article>
+      <article class="testimonial">
+        <div class="customer_img">
+          <img src="" alt="">
+        </div>
+        <h4>Nadeem Ahmed</h4>
+        <p>This was a fabulous product for me Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias hic
+          molliti suscipit nobis perferendisa.</p>
+      </article>
+      <article class="testimonial">
+        <div class="customer_img">
+          <img src="" alt="">
+        </div>
+        <h4>Nadeem Ahmed</h4>
+        <p>This was a fabulous product for me Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias hic
+          mollitia suscipit nobis perferendis .</p>
+      </article>
+      <article class="testimonial">
+        <div class="customer_img">
+          <img src="" alt="">
+        </div>
+        <h4>Nadeem Ahmed</h4>
+        <p>This was a fabulous product for me Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias hic
+          molliti suscipit nobis perferendisa.</p>
+      </article>
+    </section>
 
     <h2>Faq's</h2>
     Common Questions People Ask:
-    <section id="faqContainer" class="faq__container">
-      <div class="faq active">
-        <h4 class="faq-title">
+
+    <section class="faq__container">
+
+      <div class="faq">
+        <div class="question">
           1. Can We Use Majoon-E-Keemya In Joint Pain?
-        </h4>
-        <span class="faq-text">
-          yes!! you can use it
-        </span>
-        <button class="faq-toggle">
-          <img src="static/assets/icons/chevron-down-solid.svg"></img>
-        </button>
+          <i class="ri-arrow-down-s-line"></i>
+        </div>
+        <div class="answer ">
+          Yes you can use it!!
+        </div>
+
+      </div>
+
+      <div class="faq">
+        <div class="question">
+          1. Can We Use Majoon-E-Keemya In Joint Pain?
+          <i class="ri-arrow-down-s-line"></i>
+        </div>
+        <div class="answer ">
+          Yes you can use it!!
+        </div>
+
+      </div>
+
+      <div class="faq">
+        <div class="question">
+          1. Can We Use Majoon-E-Keemya In Joint Pain?
+          <i class="ri-arrow-down-s-line"></i>
+        </div>
+        <div class="answer ">
+          Yes you can use it!!
+        </div>
 
       </div>
 
 
 
       <div class="faq">
+        <div class="question">
+          1. Can We Use Majoon-E-Keemya In Joint Pain?
+          <i class="ri-arrow-down-s-line"></i>
+        </div>
+        <div class="answer ">
+          Yes you can use it!!
+        </div>
+
+      </div>
+
+
+
+      <!-- <div class="faq">
         <h4 class="faq-title">
           2. Can We Use Majoon-E-Keemya In Back Pain, Slip Disc, Nerve Compress?
         </h4>
@@ -212,7 +359,7 @@
         <button>
           <img src="static/assets/icons/chevron-down-solid.svg"></img>
         </button>
-      </div>
+      </div> -->
 
 
 
@@ -241,9 +388,8 @@
 
  -->
     </section>
-    THIS IS 100% NATURAL HERBAL PRODUCT
+    <!-- THIS IS 100% NATURAL HERBAL PRODUCT -->
     <!-- <button class="btn1">I want to become healthy</button> -->
-
 
 
 
@@ -252,29 +398,29 @@
   </main>
 
 
+  <!-- Contact section -->
   <footer>
-    <!-- Contact section -->
+
+
     <section class="contact-section">
       <h2 class="contact-text">Contact:</h2>
       <div class="contact-container">
-        <h4>
-          <i class="fa-solid fa-phone" style="color: #ffffff;"></i>
+        <h4 style="color: white;">
+          <i class="ri-phone-line" style="color: white; font-size: 14px;"></i>
           +91 73382 23736
         </h4>
 
-        <h4 class="gmail">
-          <i class="fa-solid fa-envelope" style="color: #ffffff;"></i>
+        <h4 class="gmail"  style="color: white;"> 
+          <i class="ri-mail-line" style="color: white; font-size: 14px;"></i>
           majoon.keemya@gmail.com
 
         </h4>
 
-      </div>
+        <div class="contact-container social">
+          <i class="ri-instagram-line" style="color: white; font-size: 18px;"></i>
+          <i class="ri-whatsapp-line" style="color: white; font-size: 18px;"></i>
+        </div>
 
-      <h2 class="contact-text social-links">Socials</h2>
-      <div class="contact-container social">
-        <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
-        <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
-        <i class="fa-brands fa-linkedin" style="color: #ffffff;"></i>
       </div>
     </section>
 

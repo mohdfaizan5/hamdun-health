@@ -1,4 +1,11 @@
-## Humdum - Health Website.
+# Humdum - Health Website.
+
+## Demo
+#### DESKTOP version
+![screencapture-mohdfaizan-me-hamdun-2024-02-01-10_49_12](https://github.com/mohdfaizan5/hamdun/assets/79694828/feec6b76-af1d-46da-bac0-904815c7afd3)
+
+#### MOBILE version
+![screencapture-mohdfaizan-me-hamdun-2024-02-01-10_50_57](https://github.com/mohdfaizan5/hamdun/assets/79694828/7386d055-d430-42a7-9df6-a42e5ee22fb1)
 
 
 #### Intro:

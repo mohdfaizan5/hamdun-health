@@ -1,29 +1,52 @@
 import Image from "next/image";
 import React from "react";
+import { GrMenu } from "react-icons/gr";
+import { Button } from "../ui/button";
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
 
 const NavBar = () => {
   return (
-    <header className="flex justify-between items-center w-screen">
-      <section className="nav_company_container">
+    <header className="flex justify-between items-center w-full fixed bg-brand-bg left-0 right-0 top-0 px-3 py-3">
+      <section className="">
         <Image
-          width={50}
-          height={50}
-          className="nav_logo"
+          width={80}
+          height={80}
+          className=""
           src="/assets/logo_hamdun.png"
           alt=""
         />
       </section>
-      <nav className="">
-        <a href="">Home</a>
+      <nav className="hidden md:flex">
+        {/* <a href="">Home</a>
         <a href="">About us</a>
         <a href="">
-          <button className="btn1">Order Now</button>
-        </a>
+          <button className="">Order Now</button>
+        </a> */}
       </nav>
-      <section className="nav_links_container-mobile">
-        hi
-        <i className="ri-menu-fill"></i>
-      </section>
+      <nav className="flex items-center gap-1">
+        <Button variant={"brand"}>Get your Majoon</Button>
+        <Sheet>
+          <SheetTrigger>
+            <GrMenu size={20} />
+          </SheetTrigger>
+          <SheetContent>
+            <SheetHeader>
+              <SheetTitle>Are you absolutely sure?</SheetTitle>
+              <SheetDescription>
+                This action cannot be undone. This will permanently delete your
+                account and remove your data from our servers.
+              </SheetDescription>
+            </SheetHeader>
+          </SheetContent>
+        </Sheet>
+      </nav>
     </header>
   );
 };

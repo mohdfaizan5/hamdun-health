@@ -19,11 +19,13 @@ const config = {
     },
     extend: {
       colors: {
-        brand:{
-          primary: "#5BC73C",
+        brand: {
+          // primary: "#5BC73C",
+          primary: "#33B540",
+          text: "#151515",
           secondary: "#A1DD90",
           dark: "#E8E8E8",
-          bg:"#fff"
+          bg: "#F9F9F9",
         },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

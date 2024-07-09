@@ -8,9 +8,7 @@ const ProductSection = () => {
       <section>
         <h2>Get started with your</h2>
         <h2 className="font-bold "> Majoon-e-Keemya Kit**</h2>
-        <Button variant={"brand"}>
-          Buy Majoon-e-Keemya
-        </Button>
+        <Button variant={"brand"}>Buy Majoon-e-Keemya</Button>
       </section>
       <section>
         <Image

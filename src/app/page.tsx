@@ -2,6 +2,7 @@ import Notification from "@/components/client/Notification";
 import RevealTextOnScroll from "@/components/landingpage/AnimatedText";
 import Faq from "@/components/landingpage/Faq";
 import Features from "@/components/landingpage/Features";
+import FeaturesShowCase from "@/components/landingpage/FeaturesShowCase";
 import Footer from "@/components/landingpage/Footer";
 import NavBar from "@/components/landingpage/NavBar";
 import ProductSection from "@/components/landingpage/ProductSection";
@@ -18,6 +19,7 @@ const page = () => {
       <ProductSection />
       <SocialProof />
       <Features />
+      <FeaturesShowCase/>
 
       {/* <Testimonials /> */}
       {/* <section className="flex items-center bg-brand-secondary/50 w-[70vw]">
@@ -48,7 +50,7 @@ const page = () => {
         day helps meet your foundational health needs. Simply put, its a way to
         invest in your health now and in the long run."
       </RevealTextOnScroll>
-      <h1 className="text-brand-primary">Hamdun health</h1> */}
+      <h1 className="text-brand-primary">ZulKifL health</h1> */}
       <Faq />
       <Footer/>
     </div>

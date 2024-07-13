@@ -21,7 +21,7 @@ const page = () => {
       <Features />
       <FeaturesShowCase/>
 
-      {/* <Testimonials /> */}
+      <Testimonials />
       {/* <section className="flex items-center bg-brand-secondary/50 w-[70vw]">
         <Image
           src={"/assets/Faizan Majoon Jar UR.png"}

@@ -23,6 +23,7 @@ const config = {
           // primary: "#5BC73C",
           primary: "#33B540",
           text: "#151515",
+          text2: "#343433",
           secondary: "#A1DD90",
           dark: "#E8E8E8",
           bg: "#F9F9F9",

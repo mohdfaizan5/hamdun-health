@@ -19,7 +19,7 @@ const page = () => {
       <ProductSection />
       <SocialProof />
       <Features />
-      <FeaturesShowCase/>
+      <FeaturesShowCase />
 
       <Testimonials />
       {/* <section className="flex items-center bg-brand-secondary/50 w-[70vw]">
@@ -52,7 +52,7 @@ const page = () => {
       </RevealTextOnScroll>
       <h1 className="text-brand-primary">ZulKifL health</h1> */}
       <Faq />
-      <Footer/>
+      <Footer />
     </div>
   );
 };

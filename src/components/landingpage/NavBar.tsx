@@ -13,7 +13,7 @@ import {
 
 const NavBar = () => {
   return (
-    <header className="flex justify-between items-center w-full fixed bg-brand-bg left-0 right-0 top-0 px-3 py-3">
+    <header className="flex justify-between items-center w-full fixed bg-brand-bg left-0 right-0 top-0 px-3 py-3 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <section className="">
         <Image
           width={80}

@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="flex border-t pt-5 items-start flex-col gap-3 py-3">
+    <footer className="flex border-t border-brand-text pt-5 items-start flex-col gap-3 py-3" >
       <section className="">
         <h3 className="gradient-brand">ZulKifL</h3>
       </section>

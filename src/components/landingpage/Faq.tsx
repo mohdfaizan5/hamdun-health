@@ -27,9 +27,9 @@ const Faq = () => {
   return (
     <div className=" mb-20 py-16">
       <h2>FAQ&apos;s</h2>
-      <Accordion type="single" collapsible>
+      <Accordion type="single" className="max-w-96" collapsible>
         {faqs.map((faq, i) => (
-          <AccordionItem value={`item-${i}`}>
+          <AccordionItem key={i} value={`item-${i}`}>
             <AccordionTrigger>{faq.qusetion}</AccordionTrigger>
             <AccordionContent>{faq.answer} </AccordionContent>
           </AccordionItem>

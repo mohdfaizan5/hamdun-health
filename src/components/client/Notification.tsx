@@ -1,5 +1,6 @@
 "use client";
 
+const question = ["Do you want to receive notifications?", "400+ bought in last month"];
 
 
 import { toast } from "sonner";

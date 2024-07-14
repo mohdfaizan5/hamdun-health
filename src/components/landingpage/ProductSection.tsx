@@ -56,7 +56,10 @@ const ProductSection = () => {
             $99
           </p>
         </div>
+        <a href="https://rzp.io/l/zulkifl-health-products" target="_blank">
+
         <Button variant={"brand"}>Buy Majoon-e-Keemya</Button>
+        </a>
       </section>
       <section>
         <Image

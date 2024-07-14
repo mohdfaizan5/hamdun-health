@@ -5,7 +5,7 @@ import "@/styles/globals.css";
 import "@/styles/typography.css";
 
 const inter = Inter({ subsets: ["latin"] });
-import { Toaster } from "@/components/ui/sonner"
+import { Toaster } from "@/components/ui/sonner";
 
 export const metadata: Metadata = {
   title: "ZulkifL Health Products",
@@ -27,7 +27,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           {children}
-          <Toaster/>
+          <Toaster />
         </ThemeProvider>
       </body>
     </html>

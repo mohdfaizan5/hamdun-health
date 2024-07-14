@@ -22,3 +22,6 @@ bg - white
 - [ ] Research about payment gateway and make the final decision.
 - [ ] Install framer motion 
   - [ ] Try to add some good animations.
+- [ ] Make faq proper
+- [ ] rethink on design part of hero section
+- [ ] 

@@ -3,6 +3,7 @@ import { useInView } from "framer-motion";
 import React, { useEffect, useRef, useState } from "react";
 import { FaStarHalfAlt } from "react-icons/fa";
 import { FaStar } from "react-icons/fa";
+import AnimatedCounter from "./AnimatedCounter";
 
 const SocialProof = () => {
   // const ref = useRef(null);
@@ -45,14 +46,18 @@ const SocialProof = () => {
           <span className="underline">10,852</span> Verified 5-star reviews
         </p>
       </section>
-      <section className="flex gap-3 py-3 mx-auto" >
+      <section className="flex gap-3 py-3 mx-auto">
         <div className="p-6 border w-44 flex flex-col items-center rounded-sm bg-white">
-          <h2 className="gradient-brand text-4xl font-bold ">10+</h2>
+          <h2 className="gradient-brand text-4xl font-bold ">
+            <AnimatedCounter from={0} to={10} /> +
+          </h2>
           {/* <p className="text-xs">Satisfied</p> */}
           <h3 className="my-0">Benefits</h3>
         </div>
         <div className="p-6 border w-40 flex flex-col items-center rounded-sm bg-white">
-          <h2 className="gradient-brand text-4xl font-bold ">7+</h2>
+          <h2 className="gradient-brand text-4xl font-bold ">
+            <AnimatedCounter from={0} to={7} /> +
+          </h2>
           <h3>Diseases</h3>
         </div>
       </section>

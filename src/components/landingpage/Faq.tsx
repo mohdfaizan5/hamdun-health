@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import {
   Accordion,
@@ -6,6 +7,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Button } from "../ui/button";
+import AnimatedCounter from "./AnimatedCounter";
 
 const faqs = [
   { qusetion: "What is Majoon E Keemya?", answer: "Its a herbal product..." },
@@ -25,9 +27,10 @@ const faqs = [
 
 const Faq = () => {
   return (
-    <div className=" mb-20 py-16">
+    <div className=" mb-20 py-16 flex flex-col justify-center items-center gap-3">
+      <AnimatedCounter from={0} to={99} />
       <h2>FAQ&apos;s</h2>
-      <Accordion type="single" className="max-w-96" collapsible>
+      <Accordion type="single" className="md:w-[600px] mx-auto" collapsible>
         {faqs.map((faq, i) => (
           <AccordionItem key={i} value={`item-${i}`}>
             <AccordionTrigger>{faq.qusetion}</AccordionTrigger>

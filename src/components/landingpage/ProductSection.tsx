@@ -15,9 +15,7 @@ const ProductSection = () => {
         <div className="flex justify-between pt-2 scale-90 md:scale-100">
           <div>
             <h4 className=" font-semibold">Majoon Keemya Jar</h4>
-            <p className="opacity-80 text-xs">
-              30 day supply per Jar
-            </p>
+            <p className="opacity-80 text-xs">30 day supply per Jar</p>
           </div>
           <h4>₹ 2977</h4>
         </div>
@@ -31,19 +29,17 @@ const ProductSection = () => {
             </p>
           </div>
           <p className=" font-semibold">
-            <span className="line-through opacity-80 font-light">₹999</span>{" "}
+            <span className="line-through opacity-80 font-light">₹999</span>
             Free
           </p>
         </div>
         <div className="flex justify-between pt-2 scale-90 md:scale-100">
           <div>
             <h4 className=" font-semibold">Guide</h4>
-            <p className="opacity-80 text-xs">
-              Checklist to keep you healthly
-            </p>
+            <p className="opacity-80 text-xs">Checklist to keep you healthly</p>
           </div>
           <p className=" font-semibold">
-            <span className="line-through opacity-80 font-light">₹599</span>{" "}
+            <span className="line-through opacity-80 font-light">₹599</span>
             Free
           </p>
         </div>
@@ -53,8 +49,8 @@ const ProductSection = () => {
             <h4 className=" font-semibold">Total</h4>
           </div>
           <p className=" font-semibold">
-            <span className="line-through opacity-80 font-light">$299/mo</span>{" "}
-            $99
+            <span className="line-through opacity-80 font-light">₹6000</span>{" "}
+            ₹2977
           </p>
         </div>
         <Link href="https://rzp.io/l/zulkifl-health-products" target="_blank">

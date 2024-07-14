@@ -6,6 +6,7 @@ import "@/styles/typography.css";
 
 const inter = Inter({ subsets: ["latin"] });
 import { Toaster } from "@/components/ui/sonner";
+import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
 
 export const metadata: Metadata = {
   title: "ZulkifL Health Products",
@@ -30,6 +31,8 @@ export default function RootLayout({
           <Toaster />
         </ThemeProvider>
       </body>
+      <GoogleAnalytics gaId="G-MY5D34TB1Y" />
+      <GoogleTagManager gtmId="AW-16643360312"/>
     </html>
   );
 }

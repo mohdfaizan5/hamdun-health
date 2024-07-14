@@ -28,7 +28,6 @@ const faqs = [
 const Faq = () => {
   return (
     <div className=" mb-20 py-16 flex flex-col justify-center items-center gap-3">
-      <AnimatedCounter from={0} to={99} />
       <h2>FAQ&apos;s</h2>
       <Accordion type="single" className="md:w-[600px] mx-auto" collapsible>
         {faqs.map((faq, i) => (

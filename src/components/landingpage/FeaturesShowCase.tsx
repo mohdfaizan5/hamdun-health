@@ -4,7 +4,7 @@ import { VscWorkspaceTrusted } from "react-icons/vsc";
 
 const FeaturesShowCase = () => {
   return (
-    <div>
+    <div id="benefits">
       <Image
         width={600}
         height={600}

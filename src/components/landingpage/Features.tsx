@@ -1,22 +1,34 @@
 import React from "react";
 import { VscWorkspaceTrusted } from "react-icons/vsc";
+import { MdOutlineScience } from "react-icons/md";
+import { BsArrowRepeat } from "react-icons/bs";
+import { PiMedalDuotone } from "react-icons/pi";
+import { MdHealthAndSafety } from "react-icons/md";
+import { PiPlantDuotone } from "react-icons/pi";
 
-const featuresData: { title: React.ReactNode; icon: any }[] = [
+const featuresData: {
+  title: React.ReactNode;
+  icon: any;
+  styles?: string;
+}[] = [
   {
     title: "Science-driven nutrition supplement",
-    icon: <VscWorkspaceTrusted />,
+    icon: <MdOutlineScience />,
+    styles: "col-start-1 col-end-4",
   },
   {
     title: "75 ingredients your body can easily absorb",
-    icon: <VscWorkspaceTrusted />,
+    icon: <PiPlantDuotone />,
+    styles: "col-start-4",
   },
   {
     title: "Third-party certified for safety",
-    icon: <VscWorkspaceTrusted />,
+    icon: <PiMedalDuotone />,
+    // styles: "col-start-6",
   },
   {
     title: "Optimized for flavor without artificial sweeteners",
-    icon: <VscWorkspaceTrusted />,
+    icon: <MdHealthAndSafety />,
   },
   {
     title: "Trusted by leading doctors and scientists",
@@ -24,7 +36,7 @@ const featuresData: { title: React.ReactNode; icon: any }[] = [
   },
   {
     title: `Continuously improved since 2010`,
-    icon: <VscWorkspaceTrusted />,
+    icon: <BsArrowRepeat />,
   },
 ];
 
@@ -33,9 +45,7 @@ const Features = () => {
     <div className="flex flex-col gap-3 pb-5 md:mx-auto md:grid md:grid-cols-4">
       {featuresData.map((feature, i) => (
         <div
-          className={`flex md:col-span-2 gap-5 items-center ${
-            (i + 1) % 2 == 0 ? "col-start-2" : "col-start-4"
-          }`}
+          className={`flex md:col-span-2 gap-5 items-center md:${feature?.styles}`}
           key={i}
         >
           <span

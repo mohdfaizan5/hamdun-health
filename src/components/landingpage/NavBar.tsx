@@ -10,6 +10,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import Link from "next/link";
 
 const NavBar = () => {
   return (
@@ -19,29 +20,58 @@ const NavBar = () => {
           width={80}
           height={80}
           className=""
-          src="/assets/logo_hamdun.png"
+          src="/New logo.png"
           alt=""
         />
       </section>
       <nav className="hidden md:flex">
-        {/* <a href="">Home</a>
-        <a href="">About us</a>
-        <a href="">
-          <button className="">Order Now</button>
-        </a> */}
+        <Link href={"#benefits"}>
+          <Button variant={"link"}>Why us!</Button>
+        </Link>
+
+        <Link href={"#testimonils"}>
+          <Button variant={"link"}>See what our patients say about us!</Button>
+        </Link>
+        <Link href={""}>
+          <Button variant={"brand-outline"}>Get a Majoon just for you!</Button>
+        </Link>
       </nav>
-      <nav className="flex items-center gap-1">
-        <Button variant={"brand"}>Get your Majoon</Button>
+      <Button variant={"brand"}>Buy Majoon</Button>
+
+      <nav className="flex items-center gap-1 md:hidden">
         <Sheet>
           <SheetTrigger>
             <GrMenu size={20} />
           </SheetTrigger>
           <SheetContent>
             <SheetHeader>
-              <SheetTitle>Are you absolutely sure?</SheetTitle>
-              <SheetDescription>
-                This action cannot be undone. This will permanently delete your
-                account and remove your data from our servers.
+              <SheetTitle>
+                <h3 className="gradient-brand font-semibold">
+                  ZulKifL Health Products
+                </h3>
+              </SheetTitle>
+              <SheetDescription className="py-10 flex flex-col justify-between h-[90vh]">
+                <div>
+                  <Link href={"#benefits"}>
+                    <Button variant={"ghost"}>- Why us!</Button>
+                  </Link>
+
+                  <Link href={"#testimonils"}>
+                    <Button variant={"ghost"}>
+                      - See what our patients say about us!
+                    </Button>
+                  </Link>
+                </div>
+                <div>
+                  <Link href={""}>
+                    <Button variant={"brand-outline"}>
+                      Get a Majoon just for you!
+                    </Button>
+                  </Link>
+                  <Link href={""}>
+                    <Button variant={"brand"}>Buy Majoon Keemya</Button>
+                  </Link>
+                </div>
               </SheetDescription>
             </SheetHeader>
           </SheetContent>

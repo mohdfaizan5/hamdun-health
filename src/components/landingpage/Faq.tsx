@@ -15,7 +15,7 @@ const faqs = [
       "Majoon E Keemya is a traditional herbal remedy designed to strengthen the body and enhance overall vitality. Known for its potent formulation, it targets weakness from head to toe, revitalizing energy levels and improving physical performance.",
   },
   {
-    qusetion: "What are the ingredients used in Majoon E Keemya?",
+    qusetion: "Ingredients used in Majoon E Keemya?",
     answer: `Gond Babool - Acacia Gum, 
 , Ashwagandha - Withania Somnifera (Indian Ginseng)
 , Kamarkas - Cissus Quadrangularis (Veldt Grape)

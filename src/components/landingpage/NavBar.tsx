@@ -15,17 +15,17 @@ import { paymentLink } from "@/lib/data";
 
 const NavBar = () => {
   return (
-    <header className="flex justify-between items-center w-full fixed bg-brand-bg left-0 right-0 top-0 px-3 py-3 md:px-10 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="flex justify-between items-center w-full fixed bg-brand-bg left-0 right-0 top-0 px-3 py-5 border-b-2 md:px-10 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <section className="">
         <Image width={80} height={80} className="" src="/New logo.png" alt="" />
       </section>
-      <nav className="hidden md:flex">
+      <nav className="font-bold hidden md:flex gap-4">
         <Link href={"#benefits"}>
-          <Button variant={"link"}>Why us!</Button>
+          <Button variant={"link"}>Why Us</Button>
         </Link>
 
         <Link href={"#testimonils"}>
-          <Button variant={"link"}>See what our patients say about us!</Button>
+          <Button variant={"link"}>Discover Our Impact</Button>
         </Link>
         <Link href={""}>
           <Button variant={"brand-outline"}>Get a Majoon just for you!</Button>
@@ -62,7 +62,8 @@ const NavBar = () => {
                   </Link>
                   <Link href={"#testimonils"}>
                     <Button variant={"ghost"}>
-                      - See what our patients say about us!
+                      {/* - See what our patients say about us! */}
+                      Discover Our Impact
                     </Button>
                   </Link>
                 </div>

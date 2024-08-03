@@ -1,79 +1,82 @@
-import Image from "next/image";
 import React from "react";
 import { Button } from "../ui/button";
 import { Separator } from "@/components/ui/separator";
 import Link from "next/link";
 import { paymentLink } from "@/lib/data";
 import { Badge } from "../ui/badge";
+import ProductImageCarousel from "./product-image-carousel";
 
 const ProductSection = () => {
   return (
     <div className="min-h-[70vh] flex mx-auto flex-col-reverse md:flex-row items-center justify-center md:gap-5">
-      <section className="md:w-[40vw] flex flex-col gap-2 py-3 md:py-0">
-        <h2 className="text-lg mb-3">
+      <section className="md:w-[500px] px-5 flex flex-col gap-2 py-3 ">
+        <h2 className="mb-3 text-3xl font-semibold"> Majoon-e-Keemya Kit</h2>
+        <p></p>
+        {/* <h2 className="">
           Get started with your <br />
-          <span className="font-bold text-xl"> Majoon-e-Keemya Kit**</span>
-        </h2>
-        <div className="flex justify-between pt-2 scale-90 md:scale-100">
+        </h2> */}
+        <div className="flex justify-between pt-2 ">
           <div>
-            <h4 className=" font-semibold">Majoon Keemya Jar</h4>
-            <p className="opacity-80 text-xs">30 day supply per Jar</p>
+            <h4 className="font-semibold ">Majoon Keemya Jar</h4>
+            <p className="text-xs opacity-80">30 day supply per Jar</p>
           </div>
           <h4>₹ 2977</h4>
         </div>
         <Separator />
         <p className="text-xs">FIRST TIME PURCHASE INCLUDES:</p>
-        <div className="flex justify-between pt-2 scale-90 md:scale-100">
+        <div className="flex justify-between pt-2 ">
           <div>
-            <h4 className=" font-semibold">
+            <h4 className="flex items-center gap-2 font-semibold">
               Health practical book
-              <Badge>Bonus</Badge>
+              <BadgeShine>Bonus</BadgeShine>
             </h4>
-            <p className="opacity-80 text-xs w-80 md:w-full">
+            <p className="text-xs opacity-80 w-80 md:w-full">
               A full guide to healthy life
             </p>
           </div>
-          <p className=" font-semibold">
-            <span className="line-through opacity-80 font-light">₹999</span>
+          <p className="font-semibold ">
+            <span className="font-light line-through opacity-80">₹999</span>
             Free
           </p>
         </div>
-        <div className="flex justify-between pt-2 scale-90 md:scale-100">
+        <div className="flex justify-between pt-2 ">
           <div>
-            <h4 className=" font-semibold">
+            <h4 className="flex items-center gap-2 font-semibold">
               Guide
-              <Badge>Bonus</Badge>
+              <BadgeShine>Bonus</BadgeShine>
+              {/* <Badge className="mb-2 bg-slate-700 -rotate-3">Bonus</Badge> */}
             </h4>
-            <p className="opacity-80 text-xs">Checklist to keep you healthly</p>
+            <p className="text-xs opacity-80">Checklist to keep you healthly</p>
           </div>
-          <p className=" font-semibold">
-            <span className="line-through opacity-80 font-light">₹599</span>
+          <p className="font-semibold ">
+            <span className="font-light line-through opacity-80">₹599</span>
             Free
           </p>
         </div>
         <Separator />
-        <div className="flex justify-between pt-2 text-xl scale-90 md:scale-100">
+        <div className="flex justify-between pt-2 text-xl text-brand">
           <div>
-            <h4 className=" font-semibold">Total</h4>
+            <h4 className="font-semibold ">Total</h4>
           </div>
-          <p className=" font-semibold">
-            <span className="line-through opacity-80 font-light">₹6000</span>{" "}
+          <p className="font-semibold ">
+            <span className="font-light line-through opacity-80">₹6000</span>{" "}
             ₹2977
           </p>
         </div>
-        <Link href={paymentLink} target="_blank">
-          <Button variant={"brand"}>Buy Majoon-e-Keemya</Button>
+        <Link className="w-full mt-3" href={paymentLink} target="_blank">
+          <Button className="w-full" variant={"brand"}>Buy Majoon-e-Keemya</Button>
         </Link>
       </section>
-      <section>
-        <Image
-          src={"/assets/Faizan Majoon Jar.png"}
-          width={400}
-          height={400}
-          alt=""
-        />
-      </section>
+      <ProductImageCarousel />
     </div>
+  );
+};
+
+const BadgeShine = ({ children }: any) => {
+  return (
+    <span className="inline-flex h-full animate-background-shine cursor-pointer items-center justify-center rounded-full border border-green-800 bg-[linear-gradient(110deg,#000,45%,#33b540,55%,#000)] bg-[length:250%_100%] px-2 py-0 text-xs font-medium text-gray-300">
+      {children}
+    </span>
   );
 };
 

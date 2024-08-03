@@ -3,6 +3,8 @@ import React from "react";
 import { Button } from "../ui/button";
 import { Separator } from "@/components/ui/separator";
 import Link from "next/link";
+import { paymentLink } from "@/lib/data";
+import { Badge } from "../ui/badge";
 
 const ProductSection = () => {
   return (
@@ -23,7 +25,10 @@ const ProductSection = () => {
         <p className="text-xs">FIRST TIME PURCHASE INCLUDES:</p>
         <div className="flex justify-between pt-2 scale-90 md:scale-100">
           <div>
-            <h4 className=" font-semibold">Health practical book</h4>
+            <h4 className=" font-semibold">
+              Health practical book
+              <Badge>Bonus</Badge>
+            </h4>
             <p className="opacity-80 text-xs w-80 md:w-full">
               A full guide to healthy life
             </p>
@@ -35,7 +40,10 @@ const ProductSection = () => {
         </div>
         <div className="flex justify-between pt-2 scale-90 md:scale-100">
           <div>
-            <h4 className=" font-semibold">Guide</h4>
+            <h4 className=" font-semibold">
+              Guide
+              <Badge>Bonus</Badge>
+            </h4>
             <p className="opacity-80 text-xs">Checklist to keep you healthly</p>
           </div>
           <p className=" font-semibold">
@@ -53,7 +61,7 @@ const ProductSection = () => {
             ₹2977
           </p>
         </div>
-        <Link href="https://rzp.io/l/zulkifl-health-products" target="_blank">
+        <Link href={paymentLink} target="_blank">
           <Button variant={"brand"}>Buy Majoon-e-Keemya</Button>
         </Link>
       </section>

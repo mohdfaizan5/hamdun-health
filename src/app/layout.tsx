@@ -1,4 +1,3 @@
-import { ThemeProvider } from "@/components/theme-provider";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "@/styles/globals.css";
@@ -20,19 +19,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className + " overflow-x-hidden"}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="light"
-          enableSystem
-          disableTransitionOnChange
-        >
-          {children}
-          <Toaster />
-        </ThemeProvider>
+      <body className={inter.className + " overflow-x-hidden bg-brand-bg"}>
+        {children}
+        <Toaster />
       </body>
       <GoogleAnalytics gaId="G-MY5D34TB1Y" />
-      <GoogleTagManager gtmId="AW-16643360312"/>
+      <GoogleTagManager gtmId="AW-16643360312" />
     </html>
   );
 }

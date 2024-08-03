@@ -31,12 +31,12 @@ const featuresData: {
     icon: <MdHealthAndSafety />,
   },
   {
-    title: "Trusted by leading doctors and scientists",
-    icon: <VscWorkspaceTrusted />,
+    title: `Continuously improved since 2011`,
+    icon: <BsArrowRepeat />,
   },
   {
-    title: `Continuously improved since 2010`,
-    icon: <BsArrowRepeat />,
+    title: "Trusted by doctors",
+    icon: <VscWorkspaceTrusted />,
   },
 ];
 

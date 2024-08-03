@@ -13,7 +13,7 @@ import React from "react";
 
 const page = () => {
   return (
-    <div className="px-8 mt-20 bg-brand-bg md:px-16">
+    <div className="px-8 pt-20  md:px-16">
       <NavBar />
       <Notification />
       <ProductSection />

@@ -24,4 +24,4 @@ bg - white
   - [ ] Try to add some good animations.
 - [ ] Make faq proper
 - [ ] rethink on design part of hero section
-- [ ] 
+

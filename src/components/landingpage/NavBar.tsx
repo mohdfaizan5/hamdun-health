@@ -23,6 +23,9 @@ const NavBar = () => {
         <Link href={"#benefits"}>
           <Button variant={"link"}>Why Us</Button>
         </Link>
+        <Link href={"#faq"}>
+          <Button variant={"link"}>FAQ's</Button>
+        </Link>
 
         <Link href={"#testimonils"}>
           <Button variant={"link"}>Discover Our Impact</Button>
@@ -31,7 +34,7 @@ const NavBar = () => {
           <Button variant={"brand-outline"}>Get a Majoon just for you!</Button>
         </Link>
       </nav>
-      
+
       {/* <Button className="hidden md:flex" variant={"brand"}>
         Buy Majoon
       </Button> */}
@@ -60,10 +63,13 @@ const NavBar = () => {
                   <Link href={"#benefits"}>
                     <Button variant={"ghost"}>- Why us!</Button>
                   </Link>
+                  <Link href={"#faq"}>
+                    <Button variant={"ghost"}>- FAQ's</Button>
+                  </Link>
                   <Link href={"#testimonils"}>
                     <Button variant={"ghost"}>
                       {/* - See what our patients say about us! */}
-                      Discover Our Impact
+                      - Discover Our Impact
                     </Button>
                   </Link>
                 </div>

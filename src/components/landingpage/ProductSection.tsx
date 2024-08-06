@@ -11,7 +11,11 @@ const ProductSection = () => {
     <div className="min-h-[70vh] flex mx-auto flex-col-reverse md:flex-row items-center justify-center md:gap-5">
       <section className="md:w-[500px] px-5 flex flex-col gap-2 py-3 ">
         <h2 className="mb-3 text-3xl font-semibold"> Majoon-e-Keemya Kit</h2>
-        <p></p>
+        <p className="text-brand-text2/80 text-[15px] mb-3">
+          Majoon Keemya, the ancient formula for modern pain relief. Experience
+          renewed strength and vitality & Improve overall well-being. Order
+          today Limited time offer: Experience the difference.
+        </p>
         {/* <h2 className="">
           Get started with your <br />
         </h2> */}
@@ -20,7 +24,15 @@ const ProductSection = () => {
             <h4 className="font-semibold ">Majoon Keemya Jar</h4>
             <p className="text-xs opacity-80">30 day supply per Jar</p>
           </div>
-          <h4>₹ 2977</h4>
+          <div className="flex items-center gap-2">
+            <h4 className=" scale-90">
+              <span className="font-light opacity-80 relative">
+                ₹3999{" "}
+                <span className="absolute left-2 bottom-2 -rotate-12 w-10 h-[1px] bg-red-600" />
+              </span>
+            </h4>
+            <p className="font-semibold flex gap-2">₹2977</p>
+          </div>
         </div>
         <Separator />
         <p className="text-xs">FIRST TIME PURCHASE INCLUDES:</p>
@@ -34,10 +46,15 @@ const ProductSection = () => {
               A full guide to healthy life
             </p>
           </div>
-          <p className="font-semibold ">
-            <span className="font-light line-through opacity-80">₹999</span>
-            Free
-          </p>
+          <div className="flex items-center gap-2">
+            <h4 className=" scale-90">
+              <span className="font-light opacity-80 relative">
+                ₹999
+                <span className="absolute left-2 bottom-2 -rotate-12 w-8 h-[1px] bg-red-600" />
+              </span>
+            </h4>
+            <p className="font-semibold flex gap-2">Free</p>
+          </div>
         </div>
         <div className="flex justify-between pt-2 ">
           <div>
@@ -48,23 +65,38 @@ const ProductSection = () => {
             </h4>
             <p className="text-xs opacity-80">Checklist to keep you healthly</p>
           </div>
-          <p className="font-semibold ">
-            <span className="font-light line-through opacity-80">₹599</span>
-            Free
-          </p>
+          <div className="flex items-center gap-2">
+            <h4 className=" scale-90">
+              <span className="font-light opacity-80 relative">
+                ₹999
+                <span className="absolute left-2 bottom-2 -rotate-12 w-8 h-[1px] bg-red-600" />
+              </span>
+            </h4>
+            <p className="font-semibold flex gap-2">Free</p>
+          </div>
         </div>
         <Separator />
         <div className="flex justify-between pt-2 text-xl text-brand">
           <div>
             <h4 className="font-semibold ">Total</h4>
           </div>
-          <p className="font-semibold ">
-            <span className="font-light line-through opacity-80">₹6000</span>{" "}
-            ₹2977
-          </p>
+          <div className="flex items-center gap-2">
+            <h4 className=" scale-75">
+              <span className="font-light opacity-80 relative">
+                ₹6000
+                <span className="absolute left-2 bottom-3 -rotate-[15deg] w-14 h-[1px] bg-red-600" />
+              </span>
+            </h4>{" "}
+            <p className="font-semibold ">₹2977</p>
+          </div>{" "}
         </div>
         <Link className="w-full mt-3" href={paymentLink} target="_blank">
-          <Button className="w-full" variant={"brand"}>Buy Majoon-e-Keemya</Button>
+          {/* <Button className="w-full" variant={"brand"}>
+            Buy Majoon-e-Keemya
+          </Button> */}
+          <button className="inline-flex w-full h-12 items-center justify-center rounded-md border  bg-gradient-to-t from-brand-primary/80 from-0% to-brand-secondary px-6 font-medium text-brand-text2 transition-colors focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-gray-50 ">
+          Buy Majoon-e-Keemya
+          </button>
         </Link>
       </section>
       <ProductImageCarousel />

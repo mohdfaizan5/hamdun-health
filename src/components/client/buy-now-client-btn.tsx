@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import { sendGTMEvent } from "@next/third-parties/google";
 

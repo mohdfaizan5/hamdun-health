@@ -17,6 +17,16 @@ const page = () => {
       <NavBar />
       <Notification />
       <ProductSection />
+      <section className="flex flex-col items-center py-4">
+        <Image
+          width={250}
+          height={250}
+          className="mx-auto "
+          src="/assets/bonus products list images.png"
+          alt=""
+        />
+        <h4 className="text-brand-primary">What you get?</h4>
+      </section>
       <SocialProof />
       <Features />
       <Testimonials />

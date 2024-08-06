@@ -5,6 +5,8 @@ import { BsArrowRepeat } from "react-icons/bs";
 import { PiMedalDuotone } from "react-icons/pi";
 import { MdHealthAndSafety } from "react-icons/md";
 import { PiPlantDuotone } from "react-icons/pi";
+import { TbTruckDelivery } from "react-icons/tb";
+import { FaTruckFast } from "react-icons/fa6";
 
 const featuresData: {
   title: React.ReactNode;
@@ -22,8 +24,8 @@ const featuresData: {
     styles: "col-start-4",
   },
   {
-    title: "Third-party certified for safety",
-    icon: <PiMedalDuotone />,
+    title: "24-48 hrs delivery",
+    icon: <FaTruckFast   />,
     // styles: "col-start-6",
   },
   {

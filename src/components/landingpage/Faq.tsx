@@ -7,7 +7,18 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Button } from "../ui/button";
-
+import Link from "next/link";
+import { paymentLink } from "@/lib/data";
+import Timer from "./timer";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Badge } from "../ui/badge";
 const faqs = [
   {
     qusetion: "What is exactly is Majoon E Keemya?",
@@ -15,7 +26,7 @@ const faqs = [
       "Majoon E Keemya is a traditional herbal remedy designed to strengthen the body and enhance overall vitality. Known for its potent formulation, it targets weakness from head to toe, revitalizing energy levels and improving physical performance.",
   },
   {
-    qusetion: "What are the ingredients used in Majoon E Keemya?",
+    qusetion: "Ingredients used in Majoon E Keemya?",
     answer: `Gond Babool - Acacia Gum, 
 , Ashwagandha - Withania Somnifera (Indian Ginseng)
 , Kamarkas - Cissus Quadrangularis (Veldt Grape)
@@ -64,7 +75,10 @@ const faqs = [
 
 const Faq = () => {
   return (
-    <div className=" mb-20 py-16 flex flex-col justify-center items-center gap-3">
+    <div
+      id="faq"
+      className=" mb-20 py-16 flex flex-col justify-center items-center gap-3"
+    >
       <h2>FAQ&apos;s</h2>
       <Accordion type="single" className="md:w-[600px] mx-auto" collapsible>
         {faqs.map((faq, i) => (
@@ -74,7 +88,26 @@ const Faq = () => {
           </AccordionItem>
         ))}
       </Accordion>
-      <Button variant={"brand-outline"}>See What People say about it</Button>
+      <div className="flex flex-col py-5 gap-2 items-center">
+        <Card>
+          <CardHeader>
+            <CardTitle> Limited Time offer</CardTitle>
+            {/* <CardDescription>Card Description</CardDescription> */}
+          </CardHeader>
+          <CardContent>
+            <p className="text-xs text-center">Ends in</p>
+            <Badge className="w-full flex items-center justify-center">
+              <Timer />
+            </Badge>
+          </CardContent>
+          {/* <CardFooter>
+                      <p>Card Footer</p>
+                    </CardFooter> */}
+        </Card>
+        <Link href={paymentLink}>
+          <Button variant={"brand-outline"}>Buy Now</Button>
+        </Link>
+      </div>
     </div>
   );
 };

@@ -11,6 +11,8 @@ import { Button } from "../ui/button";
 import { type CarouselApi } from "@/components/ui/carousel";
 import { useEffect, useState } from "react";
 import { ArrowLeftIcon, ArrowRightIcon } from "@radix-ui/react-icons";
+import { Badge } from "../ui/badge";
+import { WiStars } from "react-icons/wi";
 
 const ProductImageCarousel = () => {
   const [api, setApi] = useState<CarouselApi>();
@@ -28,7 +30,7 @@ const ProductImageCarousel = () => {
     });
   }, [api]);
   return (
-    <section className="md:max-w-[29rem]">
+    <section className="md:max-w-[29rem] relative">
       <Carousel setApi={setApi} opts={{ loop: false }}>
         <CarouselContent className="relative">
           <CarouselItem className="">
@@ -67,6 +69,12 @@ const ProductImageCarousel = () => {
           >
             <ArrowLeftIcon />
           </Button>
+          <div>
+            <Badge variant={"outline"} className="text-sm font-light">
+              Only <span className="font-bold px-1">3</span> kits left in stock
+              for this month!
+            </Badge>
+          </div>
           <Button
             onClick={() => api?.scrollTo(current + 1)}
             variant={"outline"}
@@ -76,6 +84,12 @@ const ProductImageCarousel = () => {
           </Button>
         </div>
       </Carousel>
+      <div className=" absolute top-0 right-0 flex bg-brand-secondary px-1 py-1 -rotate-3 text-xs">
+        <p className="relative">
+          Best seller
+          <WiStars className="text-white absolute size-6 -top-2 -right-3 animate-pulse" />
+        </p>
+      </div>
     </section>
   );
 };

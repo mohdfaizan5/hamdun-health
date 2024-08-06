@@ -1,10 +1,9 @@
 import React from "react";
-import { Button } from "../ui/button";
 import { Separator } from "@/components/ui/separator";
 import Link from "next/link";
 import { paymentLink } from "@/lib/data";
 import ProductImageCarousel from "./product-image-carousel";
-import { sendGTMEvent } from "@next/third-parties/google";
+import BuyNowClientBtn from "../client/buy-now-client-btn";
 
 const ProductSection = () => {
   return (
@@ -94,17 +93,7 @@ const ProductSection = () => {
           {/* <Button className="w-full" variant={"brand"}>
             Buy Majoon-e-Keemya
           </Button> */}
-          <button
-            onClick={() =>
-              sendGTMEvent({
-                event: "event",
-                value: "ads_conversion_Purchase_1",
-              })
-            }
-            className="inline-flex w-full h-12 items-center justify-center rounded-md border  bg-gradient-to-t from-brand-primary/80 from-0% to-brand-secondary px-6 font-medium text-brand-text2 transition-colors focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-gray-50 "
-          >
-            Buy Majoon-e-Keemya
-          </button>
+          <BuyNowClientBtn/>
         </Link>
       </section>
       <ProductImageCarousel />

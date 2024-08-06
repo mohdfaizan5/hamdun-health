@@ -1,7 +1,9 @@
 import Footer from "@/components/landingpage/Footer";
 import NavBar from "@/components/landingpage/NavBar";
 import { Button } from "@/components/ui/button";
+import { _gFormSurveyLink } from "@/lib/data";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const page = () => {
@@ -24,9 +26,11 @@ const page = () => {
           Fill your health details so that we make the{" "}
           <span className="font-semibold">kit just for you!</span>
         </p>
-        <Button variant={"brand"} className="w-52 text-brand-dark">
-          Fill form
-        </Button>
+        <Link href={_gFormSurveyLink}>
+          <Button variant={"brand"} className="w-52 text-brand-dark">
+            Fill form
+          </Button>
+        </Link>
         <Image
           src={"/svgs/fun-arrow.svg"}
           width={60}

@@ -3,7 +3,6 @@ import { Button } from "../ui/button";
 import { Separator } from "@/components/ui/separator";
 import Link from "next/link";
 import { paymentLink } from "@/lib/data";
-import { Badge } from "../ui/badge";
 import ProductImageCarousel from "./product-image-carousel";
 
 const ProductSection = () => {
@@ -13,8 +12,8 @@ const ProductSection = () => {
         <h2 className="mb-3 text-3xl font-semibold"> Majoon-e-Keemya Kit</h2>
         <p className="text-brand-text2/80 text-[15px] mb-3">
           Majoon Keemya, the ancient formula for modern pain relief. Experience
-          renewed strength and vitality & Improve overall well-being. Order
-          today Limited time offer: Experience the difference.
+          renewed strength, vitality & Improve overall well-being. Order today.
+          Limited time offer: Experience the difference.
         </p>
         {/* <h2 className="">
           Get started with your <br />
@@ -95,7 +94,7 @@ const ProductSection = () => {
             Buy Majoon-e-Keemya
           </Button> */}
           <button className="inline-flex w-full h-12 items-center justify-center rounded-md border  bg-gradient-to-t from-brand-primary/80 from-0% to-brand-secondary px-6 font-medium text-brand-text2 transition-colors focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-gray-50 ">
-          Buy Majoon-e-Keemya
+            Buy Majoon-e-Keemya
           </button>
         </Link>
       </section>

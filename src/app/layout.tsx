@@ -23,8 +23,8 @@ export default function RootLayout({
         {children}
         <Toaster />
       </body>
-      <GoogleAnalytics gaId="G-MY5D34TB1Y" />
-      <GoogleTagManager gtmId="AW-16643360312" />
+      <GoogleAnalytics gaId="G-Y2MERH5VDG" />
+      <GoogleTagManager gtmId="AW-16664397482" />
     </html>
   );
 }

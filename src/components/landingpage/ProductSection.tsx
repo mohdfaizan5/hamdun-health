@@ -8,7 +8,7 @@ import BuyNowClientBtn from "../client/buy-now-client-btn";
 const ProductSection = () => {
   return (
     <div className="min-h-[70vh] flex mx-auto flex-col-reverse md:flex-row mt-5 md:mt-0 items-center justify-center md:gap-5">
-      <section className="md:w-[500px] px-5 flex flex-col gap-2 py-3 ">
+      <section className="md:max-w-[500px] px-5 flex flex-col gap-2 py-3 ">
         <h2 className="mb-3 text-3xl font-semibold"> Majoon-e-Keemya Kit</h2>
         <p className="text-brand-text2/80 text-[15px] mb-3">
           Majoon Keemya, the ancient formula for modern pain relief. Experience
